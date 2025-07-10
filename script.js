@@ -7,21 +7,20 @@ document.addEventListener('DOMContentLoaded', function() {
         const encodedMessage = encodeURIComponent(message);
         
         // Verifica se o dispositivo é um celular (incluindo tablets)
-        // Isso é feito checando o User Agent do navegador
+        // Mais abrangente para pegar a maioria dos dispositivos móveis
         const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 
         let url;
         if (isMobile) {
-            // No celular, tenta abrir o aplicativo com o link wa.me
-            url = `whatsapp://send?phone=${encodedNumber}&text=${encodedMessage}`;
-            // Ou o link universal que costuma funcionar melhor para o app:
-            // url = `https://wa.me/${encodedNumber}?text=${encodedMessage}`;
+            // Para dispositivos móveis, use o link universal wa.me
+            // Este link é projetado para tentar abrir o aplicativo primeiro
+            // e oferece um redirecionamento para a versão web se o app não for encontrado.
+            url = `https://wa.me/${encodedNumber}?text=${encodedMessage}`;
         } else {
-            // No computador, abre no WhatsApp Web
+            // Para desktops/laptops, abra diretamente no WhatsApp Web
             url = `https://web.whatsapp.com/send/?phone=${encodedNumber}&text=${encodedMessage}`;
         }
         
-        // Abre a URL na nova aba/janela
         window.open(url, '_blank');
     }
 

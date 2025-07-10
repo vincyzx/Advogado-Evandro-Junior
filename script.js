@@ -1,12 +1,16 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // --- Funções para os Botões do WhatsApp (já existentes) ---
-    const whatsappNumber = '5515997206188';
+    // --- Funções para os Botões do WhatsApp ---
+    const whatsappNumber = '5515997206188'; // Seu número de WhatsApp com código do país (55) e DDD (15)
+    // A base URL para abrir diretamente no WhatsApp Web
     const whatsappWebBaseUrl = 'https://web.whatsapp.com/send/';
 
     function openWhatsAppChat(message) {
         const encodedNumber = encodeURIComponent(whatsappNumber);
         const encodedMessage = encodeURIComponent(message);
-        window.open(`${whatsappWebBaseUrl}?phone=${encodedNumber}&text=${encodedMessage}`, '_blank');
+        
+        // Abre diretamente o WhatsApp Web em uma nova aba
+        const url = `${whatsappWebBaseUrl}?phone=${encodedNumber}&text=${encodedMessage}`;
+        window.open(url, '_blank');
     }
 
     // Botão WhatsApp Fixo
@@ -33,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // --- Nova Lógica para o Formulário de Contato (AJAX com Formspree) ---
+    // --- Lógica para o Formulário de Contato (AJAX com Formspree) ---
     const contactForm = document.querySelector('.faleConosco form');
     const submitButton = contactForm ? contactForm.querySelector('button[type="submit"]') : null;
     const formMessageContainer = document.createElement('div'); // Cria um container para mensagens do formulário

@@ -6,22 +6,40 @@ document.addEventListener('DOMContentLoaded', function() {
         const encodedNumber = encodeURIComponent(whatsappNumber);
         const encodedMessage = encodeURIComponent(message);
         
-        // Verifica se o dispositivo é um celular (incluindo tablets)
-        // Mais abrangente para pegar a maioria dos dispositivos móveis
         const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 
         let url;
         if (isMobile) {
-            // Para dispositivos móveis, use o link universal wa.me
-            // Este link é projetado para tentar abrir o aplicativo primeiro
-            // e oferece um redirecionamento para a versão web se o app não for encontrado.
+            // Tenta abrir o aplicativo do WhatsApp via URI Scheme.
+            // Para iOS e Android mais recentes, 'https://wa.me/' costuma ser mais confiável.
+            // Para Android mais antigos, 'whatsapp://send' pode ser necessário.
+            // Vamos tentar o wa.me primeiro, que é o mais universal.
             url = `https://wa.me/${encodedNumber}?text=${encodedMessage}`;
+            
+            // Abre a URL. No mobile, isso deveria tentar abrir o aplicativo.
+            const newWindow = window.open(url, '_blank');
+
+            // Adiciona um pequeno atraso e verifica se a nova janela perdeu o foco.
+            // Se perdeu, significa que o app provavelmente abriu.
+            // Se não perdeu, pode ser que o app não abriu e o navegador ainda está na tela.
+            // Nesses casos, redirecionamos a mesma janela para o WhatsApp Web.
+            setTimeout(() => {
+                if (newWindow && !newWindow.closed && newWindow.location.href.startsWith('about:blank')) {
+                    // Se a nova janela ainda estiver aberta e em 'about:blank' (não redirecionou),
+                    // tenta forçar para o WhatsApp Web.
+                    newWindow.location.href = `https://web.whatsapp.com/send/?phone=${encodedNumber}&text=${encodedMessage}`;
+                } else if (newWindow && !newWindow.closed && !newWindow.location.href.includes('whatsapp.com')) {
+                    // Se a nova janela está aberta, não é blank, mas não foi para o WhatsApp ainda,
+                    // pode ser que o wa.me falhou ou pediu permissão. Tenta o web de novo.
+                     newWindow.location.href = `https://web.whatsapp.com/send/?phone=${encodedNumber}&text=${encodedMessage}`;
+                }
+            }, 500); // 500ms é um bom ponto de partida. Pode ajustar se necessário.
+
         } else {
-            // Para desktops/laptops, abra diretamente no WhatsApp Web
+            // No computador, abre no WhatsApp Web diretamente
             url = `https://web.whatsapp.com/send/?phone=${encodedNumber}&text=${encodedMessage}`;
+            window.open(url, '_blank');
         }
-        
-        window.open(url, '_blank');
     }
 
     // Botão WhatsApp Fixo

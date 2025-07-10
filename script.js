@@ -1,15 +1,27 @@
 document.addEventListener('DOMContentLoaded', function() {
     // --- Funções para os Botões do WhatsApp ---
     const whatsappNumber = '5515997206188'; // Seu número de WhatsApp com código do país (55) e DDD (15)
-    // A base URL para abrir diretamente no WhatsApp Web
-    const whatsappWebBaseUrl = 'https://web.whatsapp.com/send/';
 
     function openWhatsAppChat(message) {
         const encodedNumber = encodeURIComponent(whatsappNumber);
         const encodedMessage = encodeURIComponent(message);
         
-        // Abre diretamente o WhatsApp Web em uma nova aba
-        const url = `${whatsappWebBaseUrl}?phone=${encodedNumber}&text=${encodedMessage}`;
+        // Verifica se o dispositivo é um celular (incluindo tablets)
+        // Isso é feito checando o User Agent do navegador
+        const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
+        let url;
+        if (isMobile) {
+            // No celular, tenta abrir o aplicativo com o link wa.me
+            url = `whatsapp://send?phone=${encodedNumber}&text=${encodedMessage}`;
+            // Ou o link universal que costuma funcionar melhor para o app:
+            // url = `https://wa.me/${encodedNumber}?text=${encodedMessage}`;
+        } else {
+            // No computador, abre no WhatsApp Web
+            url = `https://web.whatsapp.com/send/?phone=${encodedNumber}&text=${encodedMessage}`;
+        }
+        
+        // Abre a URL na nova aba/janela
         window.open(url, '_blank');
     }
 

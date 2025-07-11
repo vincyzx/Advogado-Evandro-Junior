@@ -4,41 +4,33 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 :root {
-    --primary-color: #781414; /* Azul principal moderno */
-    --secondary-color: #27AE60; /* Verde para destaque ou sucesso (ex: WhatsApp) */
-    --accent-color: #F39C12; /* Cor de acento, se precisar */
-    --text-dark: #333333; /* Cor escura para textos principais */
-    --text-light: #555555; /* Cor mais clara para parágrafos */
-    --bg-light: #F8F9FA; /* Fundo claro para seções */
-    --bg-white: #FFFFFF; /* Fundo branco para cards e formulários */
-    --border-color: #E0E0E0; /* Cor de borda suave */
-
+    --primary-color: #781414;
+    --secondary-color: #27AE60;
+    --accent-color: #F39C12;
+    --text-dark: #333333;
+    --text-light: #555555;
+    --bg-light: #F8F9FA;
+    --bg-white: #FFFFFF;
+    --border-color: #E0E0E0;
     --font-heading: 'Montserrat', sans-serif;
-    --font-body: 'Quicksand', sans-serif;
-
     --transition-speed: 0.3s ease-in-out;
 }
-
 html {
-    scroll-behavior: smooth; /* Rolagem suave para âncoras */
+    scroll-behavior: smooth;
 }
-
 body {
-    font-family: var(--font-body);
+    font-family: var(--font-heading);
     color: var(--text-dark);
     line-height: 1.6;
     background-color: var(--bg-light);
 }
-
 h1, h2, h3 {
     font-family: var(--font-heading);
     color: var(--text-dark);
     margin-bottom: 1rem;
     font-weight: 700;
 }
-
 h2 {
     font-size: 2.5rem;
     text-align: center;
@@ -46,7 +38,6 @@ h2 {
     position: relative;
     padding-bottom: 0.5rem;
 }
-
 h2::after {
     content: '';
     position: absolute;
@@ -58,12 +49,10 @@ h2::after {
     background-color: var(--primary-color);
     border-radius: 2px;
 }
-
 p {
     font-size: 1.1rem;
     color: var(--text-light);
 }
-
 /* --- Botões Gerais --- */
 .btn-primary, .btn-secondary {
     display: inline-flex;
@@ -78,46 +67,39 @@ p {
     cursor: pointer;
     border: 2px solid transparent;
 }
-
 .btn-primary {
     background-color: var(--secondary-color);
     color: var(--bg-white);
 }
-
 .btn-primary:hover {
-    background-color: #23a054; /* Slightly darker green */
+    background-color: #23a054;
     transform: translateY(-3px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
-
 .btn-secondary {
     background-color: transparent;
     color: var(--bg-white);
     border-color: var(--bg-white);
 }
-
 .btn-secondary:hover {
     background-color: rgba(255, 255, 255, 0.1);
     transform: translateY(-3px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
-
 .btn-primary i, .btn-secondary i {
     margin-left: 0.8rem;
     font-size: 1.1rem;
 }
-
 /* --- Botão Flutuante do WhatsApp --- */
 .wapp {
     position: fixed;
-    right: 1.5rem; /* Ajustado para telas menores */
-    bottom: 1.5rem; /* Ajustado para telas menores */
+    right: 1.5rem;
+    bottom: 1.5rem;
     z-index: 1000;
 }
-
 .wappBnt {
-    width: 3.5rem; /* Ajustado */
-    height: 3.5rem; /* Ajustado */
+    width: 3.5rem;
+    height: 3.5rem;
     border-radius: 50%;
     border: none;
     display: flex;
@@ -125,13 +107,12 @@ p {
     align-items: center;
     background-color: var(--secondary-color);
     color: var(--bg-white);
-    font-size: 1.8rem; /* Ajustado */
+    font-size: 1.8rem;
     text-decoration: none;
     box-shadow: 0 4px 10px rgba(0,0,0,0.25);
     transition: all var(--transition-speed);
-    overflow: hidden; /* Para o texto deslizar */
+    overflow: hidden;
 }
-
 .wappBnt p {
     font-size: 0;
     white-space: nowrap;
@@ -140,65 +121,57 @@ p {
     margin-right: 0;
 }
 .wappBnt i {
-    font-size: 1.8rem; /* Ajustado */
+    font-size: 1.8rem;
     transition: all var(--transition-speed);
 }
-
-
 .wappBnt:hover {
-    width: 12rem; /* Largura expandida no hover */
+    width: 12rem;
     border-radius: 50px;
-    padding: 0 1.2rem; /* Ajustado */
-    background-color: #23a054; /* Levemente mais escuro */
-    transform: translateY(-5px); /* Efeito de levantar */
+    padding: 0 1.2rem;
+    background-color: #23a054;
+    transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0,0,0,0.3);
 }
-
 .wappBnt:hover p {
-    font-size: 1rem; /* Ajustado */
+    font-size: 1rem;
     opacity: 1;
-    margin-right: 0.6rem; /* Ajustado */
+    margin-right: 0.6rem;
     color: var(--bg-white);
 }
 .wappBnt:hover i {
-    font-size: 1.3rem; /* Ajustado */
+    font-size: 1.3rem;
 }
-
 /* --- Seção Banner --- */
 .banner {
     height: 100vh;
     width: 100vw;
-    background-image: url('./assets/img/IMG_6809.webp'); /* Corrigido o caminho */
+    background-image: url('./assets/img/IMG_6809.webp');
     background-size: cover;
-    background-position: center right; /* Foco principal para desktop */
-    background-repeat: no-repeat; /* Garante que a imagem não se repita */
+    background-position: center right;
+    background-repeat: no-repeat;
     display: flex;
     align-items: center;
     position: relative;
     overflow: hidden;
 }
-
 .degrade {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    /* Degradê padrão para desktop (horizontal) */
     background: linear-gradient(90deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.6) 50%, rgba(0,0,0,0) 100%);
     z-index: 0;
 }
-
 .cont {
     padding: 4rem;
     z-index: 1;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    max-width: 55vw; /* Limita a largura do conteúdo para melhor leitura */
+    max-width: 55vw;
     color: var(--bg-white);
 }
-
 .titulo {
     display: flex;
     flex-direction: column;
@@ -206,18 +179,15 @@ p {
     animation: fadeInSlideUp 1s ease-out forwards;
     opacity: 0;
 }
-
 .titulo h1 {
     font-size: 3rem;
     line-height: 1.2;
     color: var(--bg-white);
 }
-
 .titulo p {
     font-size: 1.3rem;
     color: rgba(255, 255, 255, 0.8);
 }
-
 .bnt1 {
     display: flex;
     gap: 1.5rem;
@@ -227,19 +197,15 @@ p {
     opacity: 0;
     animation-delay: 0.5s;
 }
-
 /* --- Seção Serviços (Como Podemos Ajudar) --- */
 .servico {
     padding: 5rem 2rem;
     background-color: var(--bg-light);
     text-align: center;
 }
-
-
 .servico h2 {
     color: var(--primary-color);
 }
-
 .card-container {
     display: flex;
     flex-wrap: wrap;
@@ -247,7 +213,6 @@ p {
     gap: 2.5rem;
     margin-top: 3rem;
 }
-
 .card {
     background-color: var(--bg-white);
     border-radius: 12px;
@@ -260,24 +225,18 @@ p {
     gap: 0.8rem;
     text-align: center;
     transition: transform var(--transition-speed), box-shadow var(--transition-speed);
-
-    /* Estado inicial para animação via JS */
     opacity: 0;
     transform: translateY(50px);
     transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
-
-/* Classe adicionada pelo JS para animar o card */
 .card.fade-in-up {
     opacity: 1;
     transform: translateY(0);
 }
-
 .card:hover {
     transform: translateY(-10px);
     box-shadow: 0 15px 40px rgba(0,0,0,0.15);
 }
-
 .icon-wrapper {
     background-color: var(--primary-color);
     color: var(--bg-white);
@@ -291,30 +250,24 @@ p {
     margin-bottom: 0.8rem;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
-
 .card h3 {
     font-size: 1.6rem;
     color: var(--text-dark);
     font-weight: 600;
     margin-bottom: 0.6rem;
 }
-
 .card p {
     font-size: 1rem;
     color: var(--text-light);
 }
-
-/* --- Seção Como Iniciar o Processo --- */
 .como-iniciar {
     padding: 5rem 2rem;
     background-color: var(--bg-white);
     text-align: center;
 }
-
 .como-iniciar h2 {
     color: var(--text-dark);
 }
-
 .steps-container {
     display: flex;
     flex-wrap: wrap;
@@ -322,7 +275,6 @@ p {
     gap: 2.5rem;
     margin-top: 3rem;
 }
-
 .step-card {
     background-color: var(--bg-white);
     border-radius: 12px;
@@ -335,25 +287,19 @@ p {
     gap: 0.8rem;
     text-align: center;
     transition: transform var(--transition-speed), box-shadow var(--transition-speed);
-    border: 1px solid var(--border-color); /* Adiciona uma borda sutil */
-
-    /* Estado inicial para animação via JS */
+    border: 1px solid var(--border-color);
     opacity: 0;
     transform: scale(0.8);
     transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
-
-/* Classe adicionada pelo JS para animar o step-card */
 .step-card.fade-in-zoom {
     opacity: 1;
     transform: scale(1);
 }
-
 .step-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 15px 40px rgba(0,0,0,0.15);
 }
-
 .step-icon {
     background-color: var(--primary-color);
     color: var(--bg-white);
@@ -366,57 +312,44 @@ p {
     font-size: 2.5rem;
     margin-bottom: 1rem;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    animation: pulse 2s infinite ease-in-out; /* Animação no ícone */
+    animation: pulse 2s infinite ease-in-out;
 }
-
-/* Animação para os ícones dos passos */
 @keyframes pulse {
     0% { transform: scale(1); }
     50% { transform: scale(1.05); }
     100% { transform: scale(1); }
 }
-
-
 .step-card h3 {
     font-size: 1.6rem;
     color: var(--text-dark);
     font-weight: 600;
     margin-bottom: 0.6rem;
 }
-
 .step-card p {
     font-size: 1rem;
     color: var(--text-light);
 }
-
-/* --- Estilo para o Botão de Agendamento na Seção "Como Iniciar" --- */
 .bnt-agendamento {
-    margin-top: 3rem; /* Espaçamento acima do botão */
-    text-align: center; /* Centraliza o botão */
+    margin-top: 3rem;
+    text-align: center;
 }
-
 .bnt-agendamento .btn-primary {
-    padding: 1.1rem 2.5rem; /* Um pouco maior talvez */
+    padding: 1.1rem 2.5rem;
     font-size: 1.1rem;
 }
-
-/* --- Nova Seção de Depoimentos --- */
 .depoimentos {
     padding: 5rem 2rem;
-    background-color: var(--primary-color); /* Um fundo mais distinto */
+    background-color: var(--primary-color);
     text-align: center;
     color: var(--bg-white);
 }
-
 .depoimentos h2 {
     color: var(--bg-white);
     position: relative;
 }
-
 .depoimentos h2::after {
-    background-color: var(--border-color); /* Linha de destaque para depoimentos */
+    background-color: var(--border-color);
 }
-
 .depoimento-container {
     display: flex;
     flex-wrap: wrap;
@@ -424,12 +357,11 @@ p {
     gap: 2.5rem;
     margin-top: 3rem;
 }
-
 .depoimento-card {
-    background-color: rgba(255, 255, 255, 0.95); /* Fundo quase branco */
+    background-color: rgba(255, 255, 255, 0.95);
     border-radius: 12px;
     padding: 2.5rem;
-    width: 350px; /* Um pouco mais largo para acomodar textos maiores */
+    width: 350px;
     box-shadow: 0 8px 25px rgba(0,0,0,0.1);
     display: flex;
     flex-direction: column;
@@ -438,9 +370,8 @@ p {
     transition: transform var(--transition-speed), box-shadow var(--transition-speed);
     position: relative;
 }
-
 .depoimento-card::before {
-    content: "\f10d"; /* Ícone de aspas de Font Awesome */
+    content: "\f10d";
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     font-size: 2.5rem;
@@ -450,40 +381,32 @@ p {
     left: 1.5rem;
     opacity: 0.3;
 }
-
 .depoimento-card p {
     font-size: 1.05rem;
     color: var(--text-dark);
     margin-bottom: 1.5rem;
-    font-style: italic; /* Depoimentos em itálico */
+    font-style: italic;
 }
-
 .depoimento-card .cliente-nome {
     font-size: 1rem;
     font-weight: 600;
     color: var(--primary-color);
     text-align: right;
-    width: 100%; /* Para alinhar o nome à direita dentro do card */
-    margin-top: auto; /* Empurra para baixo */
+    width: 100%;
+    margin-top: auto;
 }
-
 .depoimento-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 15px 40px rgba(0,0,0,0.2);
 }
-
-
-/* --- Seção Quem Somos --- */
 .quem-somos {
     padding: 5rem 2rem;
     background-color: var(--bg-white);
     text-align: center;
 }
-
 .quem-somos h2 {
     color: var(--primary-color);
 }
-
 .quem-somos-content {
     display: flex;
     flex-wrap: wrap;
@@ -493,20 +416,17 @@ p {
     max-width: 1200px;
     margin: 3rem auto 0 auto;
 }
-
 .quem-somos-text {
     flex: 1;
     min-width: 300px;
     max-width: 600px;
     text-align: left;
 }
-
 .quem-somos-text p {
     font-size: 1.1rem;
     color: var(--text-light);
     margin-bottom: 1rem;
 }
-
 .quem-somos-image {
     flex: 1;
     min-width: 280px;
@@ -515,20 +435,16 @@ p {
     justify-content: center;
     align-items: center;
 }
-
 .quem-somos-image img {
     width: 100%;
     height: auto;
     border-radius: 12px;
     transition: transform var(--transition-speed);
-    object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
+    object-fit: cover;
 }
-
 .quem-somos-image img:hover {
     transform: scale(1.02);
 }
-
-/* --- Seção Fale Conosco --- */
 .faleConosco {
     padding: 5rem 2rem;
     background-color: var(--bg-white);
@@ -538,69 +454,59 @@ p {
     align-items: center;
     gap: 4rem;
 }
-
 .form {
     background-color: var(--bg-white);
     border-radius: 12px;
-    padding: 2.5rem; /* Ajustado para mais espaço interno */
+    padding: 2.5rem;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     width: 45%;
     min-width: 320px;
     max-width: 600px;
     text-align: center;
 }
-
 .form h2 {
     color: var(--primary-color);
     margin-bottom: 1rem;
 }
-
 .form p {
     margin-bottom: 2rem;
     color: var(--text-light);
 }
-
 form {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
 }
-
 .form-group {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
-
 label {
     font-size: 1rem;
     color: var(--text-dark);
     margin-bottom: 0.5rem;
     font-weight: 600;
 }
-
 input, textarea {
     width: 100%;
     padding: 1rem;
     border: 1px solid var(--border-color);
     border-radius: 8px;
-    font-family: var(--font-body);
+    font-family: var(--font-heading);
     font-size: 1rem;
     color: var(--text-dark);
     transition: border-color var(--transition-speed), box-shadow var(--transition-speed);
     outline: none;
 }
-
 input:focus, textarea:focus {
     border-color: var(--primary-color);
     box-shadow: 0 0 0 3px rgba(47, 128, 237, 0.2);
 }
-
 textarea {
     min-height: 120px;
     resize: vertical;
 }
-
 form button[type="submit"] {
     background-color: var(--primary-color);
     color: var(--bg-white);
@@ -617,7 +523,6 @@ form button[type="submit"] {
     align-items: center;
     gap: 0.8rem;
 }
-
 form button[type="submit"]:hover {
     transform: translateY(-3px);
     box-shadow: 0 6px 15px rgba(0,0,0,0.2);
@@ -625,19 +530,18 @@ form button[type="submit"]:hover {
 /* --- Estilos para Mensagens do Formulário (AJAX) --- */
 .form-success-message {
     color: var(--text-dark);
-    background-color: #d4edda; /* Verde claro */
+    background-color: #d4edda;
     border: 1px solid #c3e6cb;
     padding: 1rem;
     margin-bottom: 1.5rem;
     border-radius: 8px;
     font-weight: 600;
     text-align: center;
-    animation: fadeIn 0.5s ease-out; /* Reutiliza a animação fadeIn */
+    animation: fadeIn 0.5s ease-out;
 }
-
 .form-error-message {
-    color: #721c24; /* Vermelho escuro */
-    background-color: #f8d7da; /* Vermelho claro */
+    color: #721c24;
+    background-color: #f8d7da;
     border: 1px solid #f5c6cb;
     padding: 1rem;
     margin-bottom: 1.5rem;
@@ -646,19 +550,15 @@ form button[type="submit"]:hover {
     text-align: center;
     animation: fadeIn 0.5s ease-out;
 }
-
-/* Estilo para o spinner de carregamento no botão */
 button[type="submit"] .fa-spinner {
-    margin-left: 0.5rem; /* Ajuste o espaçamento se necessário */
+    margin-left: 0.5rem;
 }
-
-/* Quando o botão estiver desabilitado */
 form button[type="submit"]:disabled {
     opacity: 0.7;
     cursor: not-allowed;
-    background-color: #6c757d; /* Uma cor cinza para desabilitado */
-    transform: none; /* Remove o transform do hover */
-    box-shadow: none; /* Remove o shadow do hover */
+    background-color: #6c757d;
+    transform: none;
+    box-shadow: none;
 }
 .image-form {
     width: 45%;
@@ -667,15 +567,13 @@ form button[type="submit"]:disabled {
     justify-content: center;
     align-items: center;
 }
-
 .image-form img {
     width: 100%;
     max-width: 550px;
     height: auto;
     border-radius: 8rem .5rem 8rem .5rem;
-    object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
+    object-fit: cover;
 }
-
 /* --- Rodapé --- */
 footer {
     background-color: var(--text-dark);
@@ -684,7 +582,6 @@ footer {
     text-align: center;
     font-size: 0.95rem;
 }
-
 .footer-content {
     max-width: 1200px;
     margin: 0 auto;
@@ -693,23 +590,19 @@ footer {
     align-items: center;
     gap: 1.5rem;
 }
-
 .social-links {
     display: flex;
     gap: 1.5rem;
 }
-
 .social-links a {
     color: var(--bg-white);
     font-size: 1.5rem;
     transition: color var(--transition-speed);
 }
-
 .social-links a:hover {
     color: var(--primary-color);
     transform: translateY(-2px);
 }
-
 /* --- Animações --- */
 @keyframes fadeInSlideUp {
     from {
@@ -721,7 +614,6 @@ footer {
         transform: translateY(0);
     }
 }
-
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -730,7 +622,6 @@ footer {
         opacity: 1;
     }
 }
-
 /* --- Responsividade --- */
 @media (max-width: 1440px) {
     /* Ajustes para telas grandes */
@@ -782,36 +673,29 @@ footer {
         align-items: center;
         gap: 1rem;
     }
-
     .card-container, .steps-container, .depoimento-container {
         gap: 2rem;
     }
-
     .form, .image-form {
         width: 90%;
         max-width: 550px;
     }
-
     .quem-somos-content, .faleConosco {
         flex-direction: column;
         gap: 2.5rem;
     }
-
     .quem-somos-text, .quem-somos-image {
         max-width: 100%;
         text-align: center;
     }
-
     .quem-somos-image img {
         height: 300px; /* Altura fixa para a imagem em tablets para melhor visualização */
     }
-
     .depoimento-card {
         width: 90%;
         max-width: 380px;
     }
 }
-
 @media (max-width: 768px) {
     /* Ajustes para celulares maiores e tablets pequenos */
     h2 {
@@ -856,16 +740,13 @@ footer {
         padding: 1rem 2rem;
         font-size: 1rem;
     }
-
     .image-form {
         width: 95%;
     }
-
     .image-form img {
         height: 250px; /* Altura fixa para a imagem do formulário */
     }
 }
-
 @media (max-width: 480px) {
     /* Ajustes para celulares pequenos */
     .wapp {
@@ -919,7 +800,6 @@ footer {
         padding: 0.9rem 1.8rem;
         font-size: 0.95rem;
     }
-
     .image-form img, .quem-somos-image img {
         height: 200px; /* Altura ainda menor para imagens em celulares pequenos */
         border-radius: 4rem .5rem 4rem .5rem; /* Ajuste no border-radius para mobile */

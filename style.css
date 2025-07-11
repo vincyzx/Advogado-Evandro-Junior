@@ -168,7 +168,7 @@ p {
 .banner {
     height: 100vh;
     width: 100vw;
-    background-image: url('./assets/img/IMG_6809.PNG'); /* Corrigido o caminho */
+    background-image: url('./assets/img/IMG_6809.webp'); /* Corrigido o caminho */
     background-size: cover;
     background-position: center right; /* Foco principal para desktop */
     background-repeat: no-repeat; /* Garante que a imagem não se repita */

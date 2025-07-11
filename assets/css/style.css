@@ -235,6 +235,7 @@ p {
     text-align: center;
 }
 
+
 .servico h2 {
     color: var(--primary-color);
 }
@@ -259,6 +260,17 @@ p {
     gap: 0.8rem;
     text-align: center;
     transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+
+    /* Estado inicial para animação via JS */
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* Classe adicionada pelo JS para animar o card */
+.card.fade-in-up {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .card:hover {
@@ -324,6 +336,17 @@ p {
     text-align: center;
     transition: transform var(--transition-speed), box-shadow var(--transition-speed);
     border: 1px solid var(--border-color); /* Adiciona uma borda sutil */
+
+    /* Estado inicial para animação via JS */
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* Classe adicionada pelo JS para animar o step-card */
+.step-card.fade-in-zoom {
+    opacity: 1;
+    transform: scale(1);
 }
 
 .step-card:hover {

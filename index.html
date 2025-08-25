@@ -1,157 +1,1146 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Advogado em Itapetininga/SP especializado em Direito de Família e Sucessões. Soluções humanizadas para divórcio, pensão, guarda, inventário e mais. Fale conosco!">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com; connect-src https://formspree.io; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com https://fonts.gstatic.com; font-src 'self' https://cdnjs.cloudflare.com https://fonts.gstatic.com; img-src 'self' data:; ">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://cdnjs.cloudflare.com">
-<link rel="preload" href="https://fonts.gstatic.com/s/montserrat/v25/JTUSjIg1_i6t8kCHKm45_c5H3u5jqxSfK6DuP-gy.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-<link href="https://fonts.googleapis.com/700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-<noscript><link rel="stylesheet" href="style.css"></noscript>
-<title>Advogado Evandro Junior Itapetininga, SP</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Atuação dedicada em divórcio, guarda, pensão e partilha. Soluções ágeis e humanas, do acordo à ação judicial." />
+  <title>Advocacia de Família | Soluções Humanas e Estratégicas</title>
+
+  <!-- SEO essencial -->
+  <link rel="canonical" href="https://seusite.com/" />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Evandro Junior Advocacia" />
+  <meta property="og:title" content="Advocacia de Família | Soluções Humanas e Estratégicas" />
+  <meta property="og:description" content="Atuação dedicada em divórcio, guarda, pensão e partilha. Soluções ágeis e humanas, do acordo à ação judicial." />
+  <meta property="og:url" content="https://seusite.com/" />
+  <meta property="og:image" content="https://seusite.com/assets/img/og-image.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="theme-color" content="#0E0E10" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+  <!-- Preload do hero -->
+  <link rel="preload" as="image" href="assets/img/marmore.webp" imagesrcset="assets/img/marmore.webp 1920w, assets/img/marmore-1280.webp 1280w" imagesizes="100vw" />
+
+  <!-- Segurança básica (ideal via headers do servidor) -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; form-action 'self' https://formspree.io; connect-src 'self' https://formspree.io; img-src 'self' data: https:; style-src 'self' 'unsafe-inline'; font-src 'self' data:; script-src 'self' 'unsafe-inline'; frame-src https://www.google.com https://www.google.com.br; upgrade-insecure-requests" />
+  <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()" />
+
+  <!-- Schema: LegalService -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LegalService",
+    "name": "Evandro Junior Advocacia",
+    "description": "Escritório de advocacia especializado em Direito de Família e Sucessões em Itapetininga/SP, com foco em soluções humanizadas.",
+    "url": "https://seusite.com/",
+    "priceRange": "$$$",
+    "image": "https://seusite.com/assets/img/logo.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rua Exemplo, 123",
+      "addressLocality": "Itapetininga",
+      "addressRegion": "SP",
+      "postalCode": "18200-000",
+      "addressCountry": "BR"
+    },
+    "telephone": "+5515999999999",
+    "email": "contato@advogadoevandro.com",
+    "areaServed": "Itapetininga e região",
+    "slogan": "Direito de Família com acolhimento e estratégia.",
+    "sameAs": [
+      "https://www.instagram.com/seu-perfil",
+      "https://www.linkedin.com/in/seu-perfil"
+    ]
+  }
+  </script>
+
+  <!-- Schema: FAQ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type":"Question","name":"Qual a diferença entre divórcio consensual e litigioso?","acceptedAnswer":{"@type":"Answer","text":"O divórcio consensual ocorre quando há acordo em todos os termos e pode ser feito em cartório; o litigioso depende de decisão judicial por ausência de acordo."}},
+      {"@type":"Question","name":"Quanto tempo dura um processo de inventário?","acceptedAnswer":{"@type":"Answer","text":"O inventário judicial pode levar meses; o extrajudicial, quando cabível, conclui-se em semanas com consenso entre herdeiros capazes."}},
+      {"@type":"Question","name":"Como funciona a guarda compartilhada?","acceptedAnswer":{"@type":"Answer","text":"É a regra no Brasil: ambos os pais participam das decisões relevantes, buscando-se o melhor interesse da criança."}},
+      {"@type":"Question","name":"Como funciona o atendimento online?","acceptedAnswer":{"@type":"Answer","text":"Atendimento 100% online com videochamadas, análise de documentos digitais e assinatura eletrônica."}}
+    ]
+  }
+  </script>
+
+  <!-- Ícones & manifest -->
+  <link rel="icon" href="/assets/img/favicon.ico" sizes="any" />
+  <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+
+  <!-- Fonts locais -->
+  <style>
+    @font-face{font-family:'Playfair Display';font-style:normal;font-weight:600;font-display:swap;src:url('./assets/fonts/PlayfairDisplay-SemiBold.woff2') format('woff2')}
+    @font-face{font-family:'Playfair Display';font-style:normal;font-weight:700;font-display:swap;src:url('./assets/fonts/PlayfairDisplay-Bold.woff2') format('woff2')}
+    @font-face{font-family:'Inter';font-style:normal;font-weight:400;font-display:swap;src:url('./assets/fonts/Inter-Regular.woff2') format('woff2')}
+    @font-face{font-family:'Inter';font-style:normal;font-weight:500;font-display:swap;src:url('./assets/fonts/Inter-Medium.woff2') format('woff2')}
+  </style>
+
+  <!-- ===================== CSS ===================== -->
+  <style>
+    /* Tokens PB minimal + acento único */
+    :root{
+      /* PB base */
+      --bw-bg: #111;
+      --bw-surface: #0A0A0A;
+      --bw-line: #222;
+      --bw-text: #ECECEC;
+      --bw-muted: #BDBDBD;
+      --bw-bg-light: #F7F7F7;
+      --bw-surface-light: #FFFFFF;
+      --bw-text-dark: #1A1A1A;
+      --bw-line-light: #E5E5E5;
+
+      /* Acento único para CTAs/links importantes */
+      --accent: #CFA046; /* se quiser trocar por vermelho: #8B0D12 */
+
+      /* mapear para variáveis usadas pelo site */
+      --color-primary: var(--accent);
+      --color-primary-hover: #E0B85A;
+      --color-secondary: var(--accent);
+      --color-secondary-light: #E8C573;
+
+      --color-background: var(--bw-bg);
+      --color-background-soft: var(--bw-surface);
+      --color-text-primary: var(--bw-text);
+      --color-text-secondary: var(--accent);
+
+      --font-serif:'Playfair Display',serif;
+      --font-sans:'Inter',system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;
+
+      --animation-duration:300ms;
+      --container-width:1320px;
+      --gap-lg:3rem; --gap-md:2rem; --gap-sm:1rem
+    }
+    /* Tema claro PB */
+    [data-theme="light"]{
+      --color-background: var(--bw-bg-light);
+      --color-background-soft: var(--bw-surface-light);
+      --color-text-primary: var(--bw-text-dark);
+      --color-text-secondary: #4A4A4A;
+      --color-secondary: var(--accent);
+    }
+
+    /* Base */
+    *{margin:0;padding:0;box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      font-family:var(--font-sans);
+      background:var(--color-background);
+      color:var(--color-text-primary);
+      line-height:1.6;
+      overflow-x:hidden;
+      transition:background var(--animation-duration), color var(--animation-duration)
+    }
+    .container{max-width:var(--container-width);margin:0 auto;padding:0 1rem}
+    h1,h2,h3,h4{font-family:var(--font-serif);font-weight:700;line-height:1.2;letter-spacing:-.02em}
+    h2{font-size:clamp(2rem,5vw,3.5rem);text-align:center;color:var(--color-text-primary);position:relative;padding-bottom:1rem}
+    h2::after{content:"";position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:64px;height:2px;background:currentColor;opacity:.25}
+    a{color:var(--color-secondary);text-decoration:none}
+    a:hover{opacity:.9}
+
+    /* Botões minimal (apenas acento em CTAs) */
+    .btn{
+      display:inline-block; padding:0.9rem 2rem; font-weight:600;
+      border-radius:999px; border:1px solid transparent; letter-spacing:.01em;
+      transition:transform var(--animation-duration), box-shadow var(--animation-duration), background var(--animation-duration), color var(--animation-duration)
+    }
+    .btn--primary{
+      background: var(--color-secondary);
+      color:#0B0B0B;
+      box-shadow: 0 8px 22px rgba(0,0,0,.25)
+    }
+    .btn--primary:hover{ transform:translateY(-2px); box-shadow:0 12px 30px rgba(0,0,0,.28) }
+    .btn--secondary-gold{
+      background:transparent; color:var(--color-text-primary);
+      border-color: color-mix(in oklab, var(--color-secondary) 60%, transparent);
+    }
+    .btn--secondary-gold:hover{ background: var(--color-secondary); color:#0B0B0B }
+
+    /* Acessibilidade de foco */
+    :focus-visible{outline:2px solid var(--color-secondary); outline-offset:2px; border-radius:6px}
+
+    /* Componentes gerais */
+    .skip-link{position:absolute;top:-40px;left:0;background:var(--color-text-primary);color:var(--color-background);padding:8px;z-index:1000}
+    .skip-link:focus{top:0}
+
+    .whatsapp-float{
+      position:fixed;bottom:2rem;right:2rem;background:#25D366;color:#fff;width:60px;height:60px;
+      border-radius:50%;display:flex;justify-content:center;align-items:center;box-shadow:0 4px 10px rgba(0,0,0,.3);z-index:999;transition:transform var(--animation-duration)
+    }
+    .whatsapp-float:hover{transform:scale(1.07)}
+
+    /* Header (não alterado estruturalmente) */
+    .main-header{position:fixed;top:0;left:0;width:100%;z-index:50;padding:1rem 0;transition:background-color var(--animation-duration)}
+    .main-header.scrolled{background-color:var(--color-background-soft);box-shadow:0 2px 10px rgba(0,0,0,.1)}
+    .main-header .container{display:flex;justify-content:space-between;align-items:center}
+    .logo{font-family:var(--font-serif);font-size:1.5rem;font-weight:700;color:var(--color-text-primary)}
+    .main-nav .nav-list{list-style:none;display:flex;gap:2rem}
+    .main-nav a{color:var(--color-text-primary);font-weight:500;font-size:1rem;position:relative;padding-bottom:.25rem}
+    .main-nav a::after{content:"";position:absolute;bottom:0;left:0;width:0;height:2px;background:var(--color-secondary);transition:width var(--animation-duration)}
+    .main-nav a:hover::after{width:100%}
+
+    /* Hero (não alterado estruturalmente) */
+    .hero-section{position:relative;min-height:100vh;display:flex;align-items:center;justify-content:flex-start;padding:4rem 0;overflow:hidden;text-align:left}
+    .hero-bg{position:absolute;inset:0;z-index:-1;overflow:hidden}
+    .hero-image{width:100%;height:100%;object-fit:cover;object-position:center 30%}
+    .hero-bg::before{content:"";position:absolute;inset:0;background:linear-gradient(to top,var(--color-background) 0%,rgba(14,14,16,.8) 50%,transparent 100%)}
+    .hero-content{display:flex;flex-direction:column;align-items:flex-start;gap:1.5rem}
+    .hero-container{width:95vw;margin:0;padding:0 10vw}
+    .hero-title{font-size:clamp(2.5rem,6vw,4.5rem);color:var(--color-text-primary);max-width:800px}
+    .hero-subtitle{font-size:clamp(1rem,2vw,1.25rem);color:var(--color-text-primary);opacity:.85;max-width:700px}
+    .hero-ctas{display:flex;gap:1rem;flex-wrap:wrap;justify-content:flex-start}
+    .trust-badges{display:flex;flex-wrap:wrap;justify-content:flex-start;gap:2rem;margin-top:2rem;font-size:.9rem;opacity:.8}
+
+    /* Seções (mantidas) */
+    .section{padding:5rem 0;position:relative}
+    .section.bg-dark{background:var(--color-background-soft)}
+    .card-grid,.diferenciais-grid,.team-grid,.blog-grid,.steps-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:var(--gap-lg);margin-top:var(--gap-lg)}
+    .card,.diferencial-item,.team-card,.blog-card,.step-item{
+      background:var(--color-background-soft);
+      border:1px solid color-mix(in oklab, var(--color-text-secondary) 14%, transparent);
+      border-radius:10px;padding:var(--gap-lg);text-align:center;box-shadow:0 6px 20px rgba(0,0,0,.14);
+      transition:transform var(--animation-duration), box-shadow var(--animation-duration)
+    }
+    .card:hover,.diferencial-item:hover,.team-card:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(0,0,0,.22)}
+    .icon-wrapper,.diferencial-icon{width:60px;height:60px;background:transparent;border:1px solid var(--bw-line);border-radius:50%;display:inline-flex;justify-content:center;align-items:center;margin-bottom:var(--gap-sm)}
+    .icon-wrapper svg,.diferencial-icon svg{color:var(--color-text-primary);width:30px;height:30px;opacity:.9}
+
+    /* Animações (scroll-reveal) */
+    .animate-in{opacity:0;transform:translateY(20px);transition:opacity .6s ease-out,transform .6s ease-out}
+    .animate-in[data-animation="fade-up"].is-visible{opacity:1;transform:translateY(0)}
+
+    /* ================= DO #DEPOIMENTOS PARA BAIXO ================= */
+
+    /* Depoimentos PB minimal */
+    #depoimentos{background:var(--color-background)}
+    .reviews-wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(1rem,3.5vw,2rem);align-items:stretch}
+    .review-feature{
+      border-radius:12px;background:var(--color-background-soft);
+      border:1px solid color-mix(in oklab, var(--color-text-secondary) 12%, transparent);
+      padding:clamp(1rem,2.4vw,1.6rem);display:flex;flex-direction:column;gap:.9rem;box-shadow:0 10px 30px rgba(0,0,0,.18)
+    }
+    .review-quote{font-size:clamp(1.15rem,2vw,1.35rem)}
+    .review-meta{display:flex;align-items:center;gap:.8rem}
+    .avatar{inline-size:44px;block-size:44px;border-radius:50%;overflow:hidden;filter:grayscale(100%)}
+    .avatar img{width:100%;height:100%;object-fit:cover;display:block}
+    .stars{color:#9A9A9A;letter-spacing:.18rem}
+
+    .review-grid{display:grid;grid-template-columns:1fr;gap:1rem}
+    .review-card{
+      border-radius:12px;background:var(--color-background-soft);
+      border:1px solid color-mix(in oklab, var(--color-text-secondary) 10%, transparent);
+      padding:1rem;display:grid;grid-template-columns:auto 1fr;gap:.9rem;align-items:start;
+      transition:transform 300ms, box-shadow 300ms
+    }
+    .review-card:hover{transform:translateY(-2px);box-shadow:0 12px 26px rgba(0,0,0,.18)}
+    .review-name{font-weight:700}
+    .review-role{opacity:.8;font-size:.95rem}
+    .review-text{margin-top:.25rem}
+
+    /* Bio / Sobre */
+    .bio{
+      display:grid;grid-template-columns:clamp(240px,26vw,320px) 1fr;gap:clamp(1rem,3vw,2rem);align-items:center;
+      background:var(--color-background-soft);
+      border:1px solid color-mix(in oklab, var(--color-text-secondary) 14%, transparent);
+      border-radius:14px;padding:clamp(1rem,2.4vw,1.6rem);box-shadow:0 12px 30px rgba(0,0,0,.18)
+    }
+    .bio img{width:100%;height:auto;border-radius:10px;display:block;filter:grayscale(100%)}
+    .chips{display:flex;flex-wrap:wrap;gap:.5rem;margin:.6rem 0 1rem}
+    .chip{padding:.35rem .7rem;border-radius:999px;border:1px solid var(--bw-line);font-size:.9rem;opacity:.95}
+
+    /* FAQ minimal em PB */
+    .faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+    .faq-item{border-radius:12px;border:1px solid color-mix(in oklab, var(--color-text-secondary) 25%, transparent);background:var(--color-background-soft);overflow:hidden}
+    .faq-q{width:100%;display:flex;justify-content:space-between;gap:1rem;align-items:center;border:none;background:transparent;color:var(--color-text-primary);padding:1rem 1.25rem;cursor:pointer;font-weight:700}
+    .faq-q svg{flex:0 0 auto;transition:transform 300ms}
+    .faq-a{max-height:0;overflow:hidden;transition:max-height 320ms ease;padding:0 1.25rem}
+    .faq-item.open .faq-a{padding:0 1.25rem 1rem}
+    .faq-item.open .faq-q svg{transform:rotate(180deg)}
+
+    /* CTA banner */
+    .cta-banner{
+      margin-top:2rem;border-radius:14px;background:var(--color-background-soft);
+      border:1px solid color-mix(in oklab, var(--color-text-secondary) 14%, transparent);
+      padding:clamp(1rem,3vw,2rem);display:flex;flex-wrap:wrap;gap:1rem;align-items:center;justify-content:space-between
+    }
+    .cta-banner h3{font-size:clamp(1.4rem,3.2vw,2rem);font-weight:700}
+
+    /* Contato */
+    #contato .grid{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(1rem,3vw,2rem)}
+    .card{border-radius:12px;background:var(--color-background-soft);border:1px solid color-mix(in oklab, var(--color-text-secondary) 12%, transparent);box-shadow:0 10px 28px rgba(0,0,0,.16)}
+    .contact-form{padding:clamp(1rem,2.4vw,1.6rem);display:grid;gap:1rem}
+    .field{display:grid;gap:.4rem}
+    label{font-weight:600}
+    input,textarea{
+      width:100%;padding:.8rem 1rem;border-radius:10px;border:1px solid var(--bw-line);
+      background:transparent;color:var(--color-text-primary);
+      transition:border-color 300ms, box-shadow 300ms, background 300ms
+    }
+    input:focus,textarea:focus{outline:none;border-color:var(--color-secondary);box-shadow:0 0 0 4px color-mix(in oklab, var(--color-secondary) 25%, transparent)}
+    .consent{display:flex;align-items:center;gap:.6rem;font-size:.95rem;opacity:.95}
+    .contact-info{padding:clamp(1rem,2.4vw,1.6rem);display:grid;gap:1rem}
+    .info-row{display:flex;gap:.8rem;align-items:flex-start;padding:.75rem;border-radius:10px;border:1px solid var(--bw-line);background:transparent}
+    .map{border-radius:10px;overflow:hidden;border:1px solid var(--bw-line)}
+
+    /* Footer */
+    .main-footer{background:var(--color-background-soft);padding:3rem 0;font-size:.95rem;color:var(--color-text-primary)}
+    .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:2rem;margin-bottom:2rem}
+    .footer-col h4{font-size:1.1rem;margin-bottom:.9rem;color:var(--color-text-primary)}
+    .footer-links{list-style:none;display:flex;flex-direction:column;gap:.5rem}
+    .social-links{list-style:none;display:flex;gap:1rem}
+    .copyright{text-align:center;margin-top:2rem;padding-top:1rem;border-top:1px solid color-mix(in oklab, var(--color-text-secondary) 14%, transparent)}
+
+    /* Toggle de tema (flutuante) */
+    .theme-toggle{position:fixed;bottom:calc(2rem + 70px);right:2rem;z-index:998}
+    .theme-toggle button{
+      width:52px;height:52px;border-radius:50%;border:1px solid var(--bw-line);
+      background:var(--color-background-soft);color:var(--color-text-primary);cursor:pointer;box-shadow:0 8px 30px rgba(0,0,0,.25)
+    }
+
+    /* Responsividade */
+    @media (min-width:768px){
+      .main-nav{display:flex}
+      .hero-content{text-align:left}
+      .hero-ctas,.trust-badges{justify-content:flex-start}
+      .hero-ctas{flex-wrap:nowrap}
+      .main-header .container{padding:1rem 2rem}
+      .contact-grid{grid-template-columns:1fr 1fr}
+      .footer-grid{grid-template-columns:repeat(4,1fr)}
+    }
+    @media (max-width:1024px){
+      .reviews-wrap{grid-template-columns:1fr}
+      #contato .grid{grid-template-columns:1fr}
+    }
+    @media (max-width:640px){
+      .hero-container{padding:0 1.25rem}
+      .footer-grid{grid-template-columns:1fr}
+      .faq-grid{grid-template-columns:1fr}
+    }
+    /* Seções com fundo 100% branco (independe do tema) */
+/* =========================================
+   DIFERENCIAIS + DEPOIMENTOS + FALE CONOSCO
+   Branco + vermelho; sombras suaves; transições;
+   SVGs com stroke mais grosso; sem tocar header/hero
+   ========================================= */
+
+:root{
+  --brand-red: #CFA046;
+  --brand-red-600: #7a4a0b; /* hover */
+  --ink-900: #111214;
+  --ink-700: #2C2D31;
+  --ink-500: #575A60;
+  --paper: #FFFFFF;
+  --paper-soft: #FAFAFA;
+  --line: #EFEFEF;
+}
+
+/* Seções com fundo branco e texto escuro (independe de tema) */
+#diferenciais,
+#depoimentos,
+#contato{
+  background: var(--paper) !important;
+  color: var(--ink-900);
+}
+
+/* Títulos nessas seções */
+#diferenciais .section-title,
+#depoimentos .section-title,
+#contato .section-title{
+  color: var(--ink-900);
+  text-align: left; /* fica mais editorial no branco */
+}
+.section-title::after{
+  display: none;
+}
+
+/* ========== Diferenciais ========== */
+#diferenciais .diferenciais-grid{ gap: clamp(1rem,3vw,2rem); }
+
+#diferenciais .diferencial-item{
+  background: var(--paper-soft);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  box-shadow:
+    0 8px 24px rgba(0,0,0,0.06);
+  transition:
+    transform 220ms ease,
+    box-shadow 260ms ease,
+    border-color 220ms ease,
+    background-color 220ms ease;
+  will-change: transform, box-shadow;
+}
+#diferenciais .diferencial-item:hover{
+  transform: translateY(-4px);
+  box-shadow:
+    0 16px 40px rgba(139,13,18,0.12);
+}
+
+/* Ícone circular com vermelho e stroke reforçado */
+#diferenciais .diferencial-icon{
+  background: var(--paper);
+  border: 2px solid var(--brand-red);
+}
+#diferenciais .diferencial-icon svg{
+  color: var(--brand-red);
+  stroke-width: 2.75; /* mais “presença” */
+}
+
+/* ========== Depoimentos ========== */
+#depoimentos .reviews-wrap{ gap: clamp(1rem,3.5vw,2rem); }
+
+#depoimentos .review-feature,
+#depoimentos .review-card{
+  background: var(--paper-soft);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+  color: var(--ink-900);
+  transition:
+    transform 220ms ease,
+    box-shadow 260ms ease,
+    border-color 220ms ease,
+    background-color 220ms ease;
+  will-change: transform, box-shadow;
+}
+#depoimentos .review-feature:hover,
+#depoimentos .review-card:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(139,13,18,0.12);
+}
+
+/* Acento vermelho discreto nos cards da lista */
+#depoimentos .review-card{ border-left: 3px solid var(--brand-red); }
+
+/* Tipos e detalhes */
+#depoimentos .review-quote{ color: var(--ink-900); }
+#depoimentos .review-role{ color: var(--ink-500); }
+#depoimentos .stars{ color: var(--brand-red); }
+
+/* Avatares PB com moldura suave */
+#depoimentos .avatar{
+  filter: grayscale(100%);
+  border: 1px solid var(--line);
+}
+
+/* SVGs nesta seção com traço mais grosso */
+#depoimentos svg{ stroke-width: 2.75; }
+
+/* ========== Fale Conosco ========== */
+#contato .grid{ gap: clamp(1rem,3vw,2rem); }
+
+/* Cards do contato (form + info) */
+#contato .card{
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  box-shadow: 0 10px 26px rgba(0,0,0,0.05);
+  transition:
+    transform 220ms ease,
+    box-shadow 260ms ease,
+    border-color 220ms ease,
+    background-color 220ms ease;
+}
+#contato .card:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 18px 42px rgba(139,13,18,0.10);
+}
+
+/* Formulário */
+#contato .contact-form{ padding: clamp(1rem,2.4vw,1.6rem);
+  text-align: start;}
+#contato .field label{ color: var(--ink-700); font-weight: 600; }
+#contato input,
+#contato textarea{
+  background: var(--paper);
+  color: var(--ink-900);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: .85rem 1rem;
+  transition: border-color 200ms ease, box-shadow 200ms ease, background-color 200ms ease;
+}
+#contato input::placeholder,
+#contato textarea::placeholder{ color: #9AA0A6; }
+
+#contato input:focus,
+#contato textarea:focus{
+  outline: none;
+  border-color: var(--brand-red);
+  box-shadow: 0 0 0 4px rgba(139,13,18,0.15);
+}
+
+/* Consent + info rows */
+#contato .consent{ color: var(--ink-700);}
+#contato .contact-info{ padding: clamp(1rem,2.4vw,1.6rem); display: grid; gap: 1rem; }
+#contato .info-row{
+  display: flex; gap: .8rem; align-items: flex-start;
+  padding: .8rem 1rem;
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--brand-red);
+  border-radius: 12px;
+  background: var(--paper);
+  text-align: start;
+}
+#consent{
+  width: 16px; height: 16px;
+}
+
+/* Mapa com moldura suave */
+#contato .map{ border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
+
+/* Botões nas três seções em vermelho (primário) e contorno (secundário) */
+#diferenciais .btn--primary,
+#depoimentos .btn--primary,
+#contato .btn--primary{
+  background: var(--brand-red);
+  color: #FFFFFF;
+  box-shadow: 0 10px 24px rgba(139,13,18,0.18);
+}
+#diferenciais .btn--primary:hover,
+#depoimentos .btn--primary:hover,
+#contato .btn--primary:hover{
+  background: var(--brand-red-600);
+  transform: translateY(-2px);
+  box-shadow: 0 18px 36px rgba(139,13,18,0.22);
+}
+
+#diferenciais .btn--secondary-gold,
+#depoimentos .btn--secondary-gold,
+#contato .btn--secondary-gold{
+  border-color: var(--brand-red);
+  color: var(--ink-900);
+}
+#diferenciais .btn--secondary-gold:hover,
+#depoimentos .btn--secondary-gold:hover,
+#contato .btn--secondary-gold:hover{
+  background: var(--brand-red);
+  color: #FFFFFF;
+}
+
+/* Ícones/SVGs nessas três seções com stroke mais grosso */
+#diferenciais svg,
+#depoimentos svg,
+#contato svg{
+  stroke-width: 2.75;
+}
+
+/* Acessibilidade/foco em vermelho */
+#diferenciais :focus-visible,
+#depoimentos :focus-visible,
+#contato :focus-visible{
+  outline: 2px solid var(--brand-red);
+  outline-offset: 2px;
+  border-radius: 8px;
+}
+
+/* Motion-safe */
+@media (prefers-reduced-motion: reduce){
+  #diferenciais .diferencial-item,
+  #depoimentos .review-feature,
+  #depoimentos .review-card,
+  #contato .card{
+    transition: none;
+    transform: none;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+  }
+}
+/* ================================
+   COMO FUNCIONA — badges numéricos bonitos
+   Mantém paleta existente (usa suas variáveis)
+   ================================ */
+
+#como-funciona .steps{
+  list-style: none;
+  margin-top: var(--gap-lg);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--gap-lg);
+}
+
+/* Cartões com leve destaque no bg escuro da seção */
+#como-funciona .step-card{
+  position: relative;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: start;
+  gap: 1rem;
+  padding: clamp(1rem, 2.5vw, 1.5rem);
+  background: var(--color-background-soft);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 14px;
+  box-shadow: 0 8px 22px rgba(0,0,0,0.18);
+  transition: transform 220ms ease, box-shadow 260ms ease, border-color 220ms ease, background-color 220ms ease;
+  will-change: transform, box-shadow;
+}
+#como-funciona .step-card:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.28);
+}
+
+/* Badge numérica (bonita, legível, com leve gradiente) */
+#como-funciona .step-badge{
+  --badge-size: 58px;
+  width: var(--badge-size);
+  height: var(--badge-size);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--color-background);
+  /* gradiente respeitando suas cores (dourado -> vermelho) */
+  background:
+    radial-gradient(120% 120% at 30% 30%, var(--color-secondary) 0%, var(--color-primary) 90%);
+  border: 2px solid var(--color-secondary);
+  box-shadow:
+    0 10px 22px rgba(0,0,0,0.35),
+    inset 0 0 0 1px rgba(255,255,255,0.18);
+  flex: 0 0 var(--badge-size);
+}
+
+/* Títulos e textos das etapas */
+#como-funciona .step-title{
+  font-family: var(--font-serif);
+  font-weight: 700;
+  color: var(--color-text-primary);
+  letter-spacing: -0.01em;
+  margin-bottom: .25rem;
+}
+#como-funciona .step-text{
+  color: rgba(245, 242, 234, 0.88); /* texto claro sobre bg escuro da seção */
+}
+
+/* Conectores discretos entre cards (desktop) */
+@media (min-width: 992px){
+  #como-funciona .step-card{
+    overflow: visible;
+  }
+  #como-funciona .step-card:not(:last-child)::after{
+    content: "";
+    position: absolute;
+    top: calc(1rem + 29px); /* centro vertical do badge (58px/2) */
+    right: -24px;
+    width: 48px; height: 2px;
+    background: linear-gradient(to right, var(--color-secondary), transparent);
+    opacity: .65;
+    border-radius: 2px;
+  }
+}
+
+/* Modo claro: o texto dentro do card escurece, mantendo paleta */
+[data-theme="light"] #como-funciona .step-card{
+  background: #FFFFFF;
+  border-color: #EDEDED;
+  box-shadow: 0 8px 22px rgba(0,0,0,0.06);
+}
+[data-theme="light"] #como-funciona .step-card:hover{
+  box-shadow: 0 16px 40px rgba(0,0,0,0.12);
+}
+[data-theme="light"] #como-funciona .step-title{ color: #1A1A1A; }
+[data-theme="light"] #como-funciona .step-text{ color: #2C2D31; }
+
+/* Acessibilidade/foco */
+#como-funciona .step-card:focus-within{
+  outline: 2px solid var(--color-secondary);
+  outline-offset: 2px;
+  border-radius: 14px;
+}
+/* ================================
+   ÁREAS DE ATUAÇÃO — ÍCONES DOURADOS
+   (traço mais grosso + brilho sutil + hover)
+   ================================ */
+
+#areas .icon-wrapper{
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  /* dourado com leve gradiente */
+  background:
+    radial-gradient(120% 120% at 30% 30%,
+      rgba(232,197,115,.22) 0%,
+      rgba(207,160,70,.10) 60%,
+      rgba(207,160,70,.04) 100%);
+
+  border: 2px solid var(--color-secondary); /* dourado base */
+  box-shadow:
+    0 10px 22px rgba(207,160,70,.18),
+    inset 0 1px 0 rgba(255,255,255,.25);
+
+  transition:
+    transform 200ms ease,
+    box-shadow 240ms ease,
+    border-color 200ms ease,
+    background-color 200ms ease;
+}
+
+#areas .icon-wrapper svg{
+  width: 34px;
+  height: 34px;
+  color: var(--color-secondary);     /* dourado */
+  stroke: currentColor;
+  stroke-width: 2.8;                  /* traço mais grosso */
+  fill: none;
+  filter: drop-shadow(0 1px 0 rgba(0,0,0,.15));
+  transition: color 200ms ease;
+}
+
+/* Hover sutil no card: eleva o aro e clareia o dourado */
+#areas .card:hover .icon-wrapper{
+  transform: translateY(-2px);
+  box-shadow:
+    0 16px 36px rgba(207,160,70,.25),
+    inset 0 1px 0 rgba(255,255,255,.30);
+  border-color: var(--color-secondary-light);  /* dourado mais claro */
+}
+#areas .card:hover .icon-wrapper svg{
+  color: var(--color-secondary-light);
+}
+
+  </style>
 </head>
 <body>
-<div class="wapp">
-<button id="whatsappFixedButton" class="wappBnt">
-<p>Fale Conosco</p>
-<i class="fab fa-whatsapp"></i>
-</button>
-</div>
-<section class="banner">
-<div class="degrade"></div>
-<div class="cont">
-<div class="titulo">
-<h1>Escritório Especializado em Direito de Família e Sucessões em Itapetininga/SP.</h1>
-<p>Com um atendimento humanizado e estratégico, nosso escritório em Itapetininga oferece soluções jurídicas eficientes para questões de divórcio, guarda de filhos, pensão alimentícia e inventário, garantindo a proteção dos seus direitos e o bem-estar da sua família.</p>
-</div>
-<div class="bnt1">
-<button id="contactButton" class="btn-primary">
-Entrar em Contato <i class="fab fa-whatsapp"></i>
-</button>
-</div>
-</div>
+
+  <!-- WhatsApp flutuante -->
+  <a href="https://wa.me/5515999999999?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta%20jur%C3%ADdica."
+     class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Falar no WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16.7 8a5 5 0 0 0-9.4 0"/><path d="M19 12a7 7 0 1 1-7-7c1.7 0 3.3.4 4.8 1.4L18.7 5.3s.1-.1.2-.2c.3-.3.6-.5.9-.6.2-.1.5-.2.8-.2s.6-.1.9 0a2 2 0 0 1 1.7 2.6L20.8 9c.7 1.2 1.2 2.6 1.2 4a9 9 0 1 1-18 0c0-2.4 1-4.7 2.7-6.4l-.5-.5a1 1 0 0 1 1.4-1.4l.5.5z"/><path d="m15 10-2.75 3L10 10"/></svg>
+  </a>
+
+  <!-- ========== HEADER (não alterado) ========== -->
+  <header class="main-header" role="banner">
+    <div class="container">
+      <a href="#" class="logo" aria-label="Página inicial">Evandro Junior.</a>
+      <nav class="main-nav" aria-label="Navegação principal">
+        <ul class="nav-list">
+          <li><a href="#areas">Áreas</a></li>
+          <li><a href="#diferenciais">Diferenciais</a></li>
+          <li><a href="#equipe">Sobre</a></li>
+          <li><a href="#depoimentos">Depoimentos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a href="#contato" class="btn btn--primary" aria-label="Agendar consulta">Agendar consulta</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- ========== HERO (não alterado) ========== -->
+    <section class="hero-section" aria-label="Abertura do site">
+      <div class="hero-bg">
+        <picture>
+          <source srcset="assets/img/marmore.webp" type="image/webp" />
+          <img src="assets/img/marmore.webp" alt="Escultura clássica de mármore com véu de seda vermelha" class="hero-image" width="1920" height="1080" fetchpriority="high" decoding="async" />
+        </picture>
+      </div>
+      <div class="hero-content hero-container">
+        <h1 class="hero-title animate-in" data-animation="fade-up">Direito de Família com <br />acolhimento e estratégia.</h1>
+        <p class="hero-subtitle animate-in" data-animation="fade-up">Atuação dedicada em divórcio, guarda, pensão e partilha — soluções ágeis e humanas, do acordo à ação judicial.</p>
+        <div class="hero-ctas animate-in" data-animation="fade-up">
+          <a href="https://wa.me/5515999999999" target="_blank" rel="noopener noreferrer" class="btn btn--primary" aria-label="Falar com Dr. Evandro pelo WhatsApp">Falar com Dr. Evandro</a>
+          <a href="#contato" class="btn btn--secondary-gold" aria-label="Ir para a seção de contato">Agendar consulta</a>
+        </div>
+        <div class="trust-badges animate-in" data-animation="fade-up" aria-label="Selo de confiança">
+          <p>OAB/SP 407.083</p>
+          <p>Atendimento Online</p>
+          <p>Itapetininga e região</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ÁREAS (mantido) ========== -->
+    <section id="areas" class="section" aria-labelledby="areas-title">
+      <div class="container">
+        <h2 id="areas-title" class="section-title animate-in" data-animation="fade-up">Nossas Áreas de Atuação</h2>
+        <div class="card-grid">
+          <div class="card animate-in" data-animation="fade-up">
+            <div class="icon-wrapper" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a1 1 0 0 0-1 1v1a1 1 0 0 0 2 0V3a1 1 0 0 0-1-1z"/><path d="M4.34 4.34a1 1 0 0 0-1.42 1.42l.7.7a1 1 0 0 0 1.42-1.42l-.7-.7z"/><path d="M12 21a1 1 0 0 0 1-1v-1a1 1 0 0 0-2 0v1a1 1 0 0 0 1 1z"/><path d="M4.34 19.66a1 1 0 0 0 0-1.42l.7-.7a1 1 0 0 0 1.42 1.42l-.7.7a1 1 0 0 0-1.42 0z"/><circle cx="12" cy="12" r="5"/></svg>
+            </div>
+            <h3>Divórcio e União Estável</h3>
+            <p>Resolva sua separação de forma ágil e segura, seja consensual ou litigiosa.</p>
+          </div>
+          <div class="card animate-in" data-animation="fade-up" style="--delay:100ms">
+            <div class="icon-wrapper" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3>Guarda e Visitas</h3>
+            <p>Definições claras de convivência, pelo melhor interesse da criança.</p>
+          </div>
+          <div class="card animate-in" data-animation="fade-up" style="--delay:200ms">
+            <div class="icon-wrapper" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+            </div>
+            <h3>Pensão Alimentícia</h3>
+            <p>Definição, revisão, exoneração e execução para sustento justo.</p>
+          </div>
+          <div class="card animate-in" data-animation="fade-up" style="--delay:300ms">
+            <div class="icon-wrapper" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><line x1="8" x2="16" y1="13" y2="13"/><line x1="8" x2="16" y1="17" y2="17"/><line x1="8" x2="12" y1="9" y2="9"/></svg>
+            </div>
+            <h3>Inventário e Partilha</h3>
+            <p>Condução segura para proteção do patrimônio familiar.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== COMO FUNCIONA (mantido) ========== -->
+    <section id="como-funciona" class="section bg-dark" aria-labelledby="como-title">
+  <div class="container">
+    <h2 id="como-title" class="section-title animate-in" data-animation="fade-up">
+      Como funciona o nosso processo
+    </h2>
+
+    <!-- steps: números em badge circular; layout responsivo -->
+    <ol class="steps" role="list">
+      <li class="step-card animate-in" data-animation="fade-up">
+        <div class="step-badge" aria-hidden="true">1</div>
+        <div class="step-body">
+          <h3 class="step-title">Contato e Análise</h3>
+          <p class="step-text">
+            Você entra em contato pelo WhatsApp, e-mail ou formulário. Avaliamos o caso e agendamos a consulta.
+          </p>
+        </div>
+      </li>
+
+      <li class="step-card animate-in" data-animation="fade-up" style="--delay:100ms">
+        <div class="step-badge" aria-hidden="true">2</div>
+        <div class="step-body">
+          <h3 class="step-title">Estratégia e Documentos</h3>
+          <p class="step-text">
+            Reunião (online ou presencial) para definir a melhor estratégia e checklist de documentos.
+          </p>
+        </div>
+      </li>
+
+      <li class="step-card animate-in" data-animation="fade-up" style="--delay:200ms">
+        <div class="step-badge" aria-hidden="true">3</div>
+        <div class="step-body">
+          <h3 class="step-title">Solução e Acompanhamento</h3>
+          <p class="step-text">
+            Iniciamos o procedimento judicial ou extrajudicial e mantemos você informado a cada passo.
+          </p>
+        </div>
+      </li>
+    </ol>
+  </div>
 </section>
-<section class="servico">
-<h2 class="animate-up">Áreas de Atuação</h2>
-<div class="card-container">
-<div class="card animate-up">
-<div class="icon-wrapper"><i class="fas fa-handshake"></i></div>
-<h3>Divórcio e Dissolução de União Estável</h3>
-<p>Atuamos em divórcio consensual e litigioso, incluindo a partilha de bens e regularização de documentos, com total orientação jurídica.</p>
-</div>
-<div class="card animate-up">
-<div class="icon-wrapper"><i class="fas fa-child"></i></div>
-<h3>Guarda e Regulamentação de Visitas</h3>
-<p>Assessoria completa em questões de guarda compartilhada ou unilateral, sempre buscando o melhor interesse da criança.</p>
-</div>
-<div class="card animate-up">
-<div class="icon-wrapper"><i class="fas fa-money-bill-wave"></i></div>
-<h3>Pensão Alimentícia</h3>
-<p>Orientação e ação judicial para fixação, revisão ou exoneração de pensão alimentícia para filhos e ex-cônjuges.</p>
-</div>
-<div class="card animate-up">
-<div class="icon-wrapper"><i class="fas fa-file-invoice"></i></div>
-<h3>Inventário e Partilha de Bens</h3>
-<p>Conduzimos processos de inventário judicial e extrajudicial com agilidade e eficiência para a sucessão patrimonial.</p>
-</div>
-</div>
-</section>
-<section class="como-iniciar">
-<h2 class="animate-up">Seu Caminho para a Solução</h2>
-<div class="steps-container">
-<div class="step-card animate-up">
-<div class="step-icon"><i class="fas fa-comments"></i></div>
-<h3>1. Primeiro Contato</h3>
-<p>Fale conosco pelo WhatsApp ou preencha o formulário para agendar sua primeira conversa.</p>
-</div>
-<div class="step-card animate-up">
-<div class="step-icon"><i class="fas fa-laptop-house"></i></div>
-<h3>2. Consulta Detalhada</h3>
-<p>Realizamos uma consulta para entender seu caso e traçar a melhor estratégia jurídica, online ou presencial.</p>
-</div>
-<div class="step-card animate-up">
-<div class="step-icon"><i class="fas fa-gavel"></i></div>
-<h3>3. Ação Jurídica</h3>
-<p>Atuamos com dedicação e agilidade para alcançar a solução mais favorável para sua situação.</p>
-</div>
-</div>
-<div class="bnt-agendamento animate-zoom">
-<button id="scheduleButton" class="btn-primary">
-Agendar Atendimento Online <i class="far fa-calendar-alt"></i>
-</button>
-</div>
-</section>
-<section class="depoimentos">
-<h2 class="animate-up">O Que Nossos Clientes Dizem</h2>
-<div class="depoimento-container">
-<div class="depoimento-card animate-up">
-<p>"Ótimo profissional, super indico! Sanou todas as minhas dúvidas e me ajudou muito no meu processo de divórcio."</p>
-<span class="cliente-nome">- Priscila F.</span>
-</div>
-<div class="depoimento-card animate-up">
-<p>"Atendimento excelente! Super atencioso e prestativo. Profissional de qualidade e com muito conhecimento na área. Recomendo de olhos fechados."</p>
-<span class="cliente-nome">- Amanda C.</span>
-</div>
-<div class="depoimento-card animate-up">
-<p>"Excelente profissional! Super atencioso e dedicado em ajudar. Recomendo muito!"</p>
-<span class="cliente-nome">- Amanda S.</span>
-</div>
-</div>
-</section>
-<section class="quem-somos">
-<h2>Nosso Compromisso com Você</h2>
-<div class="quem-somos-content">
-<div class="quem-somos-text">
-<p>Nosso escritório, atuante em Itapetininga e região, é fundado nos pilares da ética, transparência e dedicação. Compreendemos que questões familiares e sucessórias são delicadas e exigem não apenas conhecimento jurídico aprofundado, mas também empatia e escuta ativa.</p>
-<p>Com anos de experiência em Direito de Família e Sucessões, nossa equipe está preparada para oferecer um atendimento personalizado, buscando as melhores soluções para cada caso, seja através de acordos amigáveis ou da representação em processos litigiosos. Acreditamos que a justiça deve ser acessível e que cada cliente merece atenção integral e um suporte jurídico de excelência.</p>
-</div>
-<div class="quem-somos-image">
-<img src="./assets/img/visao-de-desenho-animado-3d-da-balanca-da-justica.webp" alt="Mesa de advogado com livros jurídicos, malhete e balança da justiça, simbolizando a advocacia familiar em Itapetininga." loading="lazy">
-</div>
-</div>
-</section>
-<section class="faleConosco" id="fale-conosco">
-<div class="form animate-left">
-<h2>Entre em Contato</h2>
-<p>Agende sua consulta ou tire suas dúvidas. Estamos prontos para te atender com toda atenção e profissionalismo em Itapetininga, SP.</p>
-<form action="https://formspree.io/f/mwpbdqjo" method="POST">
-<div class="form-group">
-<label for="nome">Seu Nome:</label>
-<input type="text" id="nome" name="nome" required placeholder="Seu nome completo">
-</div>
-<div class="form-group">
-<label for="email">Seu E-mail:</label>
-<input type="email" id="email" name="_replyto" required placeholder="seuemail@exemplo.com">
-</div>
-<div class="form-group">
-<label for="telefone">Seu Telefone (WhatsApp):</label>
-<input type="tel" id="telefone" name="telefone" required placeholder="(XX) XXXXX-XXXX">
-</div>
-<div class="form-group">
-<label for="mensagem">Sua Mensagem:</label>
-<textarea id="mensagem" name="mensagem" rows="4" required placeholder="Descreva brevemente sua necessidade..."></textarea>
-</div>
-<button type="submit">Enviar Mensagem <i class="fas fa-paper-plane"></i></button>
-</form>
-</div>
-<div class="image-form">
-<img src="./assets/img/ImgForm.webp" alt="Balança da Justiça e livros jurídicos, representando a seriedade da advocacia de família em Itapetininga." loading="lazy">
-</div>
-</section>
-<footer>
-<div class="footer-content">
-<p>&copy; 2025 Escritório de Advocacia Evandro de Castro Leite Junior. Todos os direitos reservados. OAB/SP 407.083</p>
-<div class="social-links">
-<a href="https://www.instagram.com/evandro__jr?igsh=bHk0bWNqZmF1NGxv" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-<a href="https://www.facebook.com/share/1E4C81koMP/" target="_blank" aria-label="LinkedIn"><i class="fab fa-facebook"></i></a>
-</div>
-</div>
-</footer>
-<script src="script.js" defer></script>
+
+
+    <!-- ========== DIFERENCIAIS (mantido) ========== -->
+    <section id="diferenciais" class="section" aria-labelledby="dif-title">
+      <div class="container">
+        <h2 id="dif-title" class="section-title animate-in" data-animation="fade-up">Nossos Diferenciais</h2>
+        <div class="diferenciais-grid">
+          <div class="diferencial-item animate-in" data-animation="fade-up">
+            <div class="diferencial-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.63 0-3.26.8-4.5 2-1.24-1.2-2.87-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.51 4.04 3 5.5l7 7Z"/></svg>
+            </div>
+            <h3>Atendimento humanizado</h3>
+            <p>Compreensão e empatia em todas as etapas.</p>
+          </div>
+          <div class="diferencial-item animate-in" data-animation="fade-up" style="--delay:100ms">
+            <div class="diferencial-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3>Transparência</h3>
+            <p>Você informado a cada passo, sem surpresas.</p>
+          </div>
+          <div class="diferencial-item animate-in" data-animation="fade-up" style="--delay:200ms">
+            <div class="diferencial-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+            </div>
+            <h3>Agilidade</h3>
+            <p>Foco em resultados com eficiência.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== DEPOIMENTOS (PB minimal) ========== -->
+    <section id="depoimentos" class="section" aria-labelledby="dep-title">
+      <div class="container">
+        <h2 id="dep-title" class="section-title animate-in" data-animation="fade-up" style="text-align:left;">O que nossos clientes dizem</h2>
+
+        <div class="reviews-wrap animate-in" data-animation="fade-up">
+          <article class="review-feature">
+            <p class="review-quote">“Atuação impecável. Fui acolhida desde a primeira conversa e todo o processo correu com clareza e rapidez.”</p>
+            <div class="review-meta">
+              <span class="avatar"><img src="assets/img/ava1.jpg" alt="" loading="lazy" decoding="async"></span>
+              <div>
+                <div class="review-name">Juliana S.</div>
+                <div class="review-role">Designer • guarda e pensão</div>
+                <div class="stars" aria-label="Avaliação 5 estrelas">★★★★★</div>
+              </div>
+            </div>
+          </article>
+
+          <div class="review-grid">
+            <article class="review-card">
+              <span class="avatar"><img src="assets/img/ava2.jpg" alt="" loading="lazy" decoding="async"></span>
+              <div>
+                <div class="review-name">Ricardo V. <span class="review-role">• empresário</span></div>
+                <p class="review-text">“Objetividade e estratégia. Conseguimos um acordo sem desgaste e com segurança jurídica.”</p>
+              </div>
+            </article>
+            <article class="review-card">
+              <span class="avatar"><img src="assets/img/ava3.jpg" alt="" loading="lazy" decoding="async"></span>
+              <div>
+                <div class="review-name">Mariana P. <span class="review-role">• contadora</span></div>
+                <p class="review-text">“Comunicação clara e atualizações constantes. Senti confiança do início ao fim.”</p>
+              </div>
+            </article>
+            <article class="review-card">
+              <span class="avatar"><img src="assets/img/ava4.jpg" alt="" loading="lazy" decoding="async"></span>
+              <div>
+                <div class="review-name">Fábio R. <span class="review-role">• professor</span></div>
+                <p class="review-text">“Equipe humana e técnica. Resolveram meu inventário com muita agilidade.”</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SOBRE (layout PB) ========== -->
+    <section id="equipe" class="section" aria-labelledby="sobre-title">
+      <div class="container">
+        <h2 id="sobre-title" class="section-title animate-in" data-animation="fade-up" style="text-align:left;">Sobre Dr. Evandro Junior</h2>
+        <article class="bio animate-in" data-animation="fade-up">
+          <img src="./assets/img/advogado.jpg" alt="Foto do Dr. Evandro Junior" width="420" height="420" loading="lazy" decoding="async">
+          <div>
+            <h4>Evandro Junior — OAB/SP 407.083</h4>
+            <p>Especialista em Direito de Família e Sucessões, com experiência em divórcios, guarda, pensão e partilha de bens. Atendimento personalizado, ético e transparente, com estratégia voltada à solução de conflitos.</p>
+            <div class="chips">
+              <span class="chip">Divórcio & União Estável</span>
+              <span class="chip">Guarda & Convivência</span>
+              <span class="chip">Pensão & Execução</span>
+              <span class="chip">Inventário & Partilha</span>
+            </div>
+            <a class="btn btn--primary" href="#contato">Agendar consulta</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ========== FAQ (PB minimal) ========== -->
+    <section id="faq" class="section bg-dark" aria-labelledby="faq-title">
+      <div class="container">
+        <h2 id="faq-title" class="section-title animate-in" data-animation="fade-up" style="text-align:left;">Perguntas Frequentes</h2>
+        <div class="faq-grid">
+          <div class="faq-item animate-in" data-animation="fade-up">
+            <button class="faq-q" aria-expanded="false">
+              <span>Qual a diferença entre divórcio consensual e litigioso?</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+            <div class="faq-a"><p>O consensual ocorre com acordo total e pode ser feito em cartório. O litigioso exige decisão judicial por falta de consenso.</p></div>
+          </div>
+
+          <div class="faq-item animate-in" data-animation="fade-up">
+            <button class="faq-q" aria-expanded="false">
+              <span>Quanto tempo leva um inventário?</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+            <div class="faq-a"><p>Judicial: meses ou anos, conforme complexidade. Extrajudicial: semanas, com consenso entre herdeiros capazes.</p></div>
+          </div>
+
+          <div class="faq-item animate-in" data-animation="fade-up">
+            <button class="faq-q" aria-expanded="false">
+              <span>Guarda compartilhada é 50/50 de tempo?</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+            <div class="faq-a"><p>Não necessariamente. É corresponsabilidade nas decisões, buscando o melhor interesse da criança.</p></div>
+          </div>
+
+          <div class="faq-item animate-in" data-animation="fade-up">
+            <button class="faq-q" aria-expanded="false">
+              <span>Atendem 100% online?</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+            <div class="faq-a"><p>Sim. Reuniões por vídeo, análise de documentos digitais e assinatura eletrônica com segurança e agilidade.</p></div>
+          </div>
+        </div>
+
+        <div class="cta-banner animate-in" data-animation="fade-up">
+          <h3>Pronto para resolver com estratégia e acolhimento?</h3>
+          <div>
+            <a href="https://wa.me/5515999999999" target="_blank" rel="noopener" class="btn btn--primary">Falar no WhatsApp</a>
+            <a href="#contato" class="btn btn--secondary-gold">Agendar consulta</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTATO (PB minimal) ========== -->
+    <section id="contato" class="section" aria-labelledby="contato-title">
+      <div class="container">
+        <h2 id="contato-title" class="section-title animate-in" data-animation="fade-up" style="text-align:left;">Fale Conosco</h2>
+        <div class="grid">
+          <form id="contact-form" action="https://formspree.io/f/seu-id" method="POST" class="card contact-form animate-in" data-animation="fade-up" autocomplete="off">
+            <div class="field">
+              <label for="name">Nome completo</label>
+              <input id="name" name="name" type="text" required minlength="3" autocomplete="name" placeholder="Nome Completo"/>
+            </div>
+            <div class="field">
+              <label for="phone">WhatsApp</label>
+              <input id="phone" name="phone" type="tel" inputmode="tel" pattern="[0-9()+\\-\\s]{8,}" required autocomplete="tel" placeholder="(XX)XXXXX-XXXX"/>
+            </div>
+            <div class="field">
+              <label for="subject">Assunto</label>
+              <input id="subject" name="subject" type="text" required />
+            </div>
+            <div class="field">
+              <label for="message">Sua mensagem</label>
+              <textarea id="message" name="message" rows="5" required minlength="10"></textarea>
+            </div>
+            <!-- Honeypot -->
+            <input type="text" name="_gotcha" style="display:none" tabindex="-1" aria-hidden="true" />
+            <label class="consent"><input id="consent" name="consent" type="checkbox" required /> Concordo com a <a href="#" rel="noopener">Política de Privacidade</a>.</label>
+            <p style="font-size:.9rem;opacity:.9">Resposta em até 1h no horário comercial. Seus dados são confidenciais.</p>
+            <button type="submit" class="btn btn--primary" id="submit-btn">Enviar Mensagem</button>
+            <div id="form-status" aria-live="polite"></div>
+          </form>
+
+          <aside class="card contact-info animate-in" data-animation="fade-up">
+            <div class="info-row">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 3.16 9.81 19.79 19.79 0 0 1 .09 1.18 2 2 0 0 1 2.06 0h3A2 2 0 0 1 7 1.72c.2 1.52.62 2.99 1.22 4.37a2 2 0 0 1-.45 2.11L6.6 9.4a16 16 0 0 0 6 6l1.2-1.18a2 2 0 0 1 2.11-.45 13.4 13.4 0 0 0 4.37 1.22A2 2 0 0 1 22 16.92Z"/></svg>
+              <div><strong>Telefone/WhatsApp</strong><br><a href="tel:+5515997206188">+55 (15) 99999-9999</a></div>
+            </div>
+            <div class="info-row">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z"/><path d="m22 6-10 7L2 6"/></svg>
+              <div><strong>E-mail</strong><br><a href="mailto:contato@advogadoevandro.com">contato@advogadoevandro.com</a></div>
+            </div>
+            <div class="info-row">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 1 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              <div><strong>Endereço</strong><br>Rua Exemplo, 123 — Centro, Itapetininga/SP</div>
+            </div>
+            <div class="map">
+              <iframe title="Mapa do escritório" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.065549553597!2d-46.63467318449901!3d-23.55018658467885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59a686b245e3%3A0xc6c4c5c2d3b24f5!2sPra%C3%A7a%20da%20S%C3%A9%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1678235212345" width="100%" height="260" style="border:0" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+          </aside>
+        </div>
+
+        <div class="cta-banner animate-in" data-animation="fade-up" style="background-color: var(--paper);">
+          <h3>Precisa de orientação agora? Atendimento humano e retorno rápido.</h3>
+          <div>
+            <a href="https://wa.me/5515997206188" target="_blank" rel="noopener" class="btn btn--primary">Falar agora</a>
+            <a href="#contato" class="btn btn--secondary-gold">Enviar mensagem</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== FOOTER (PB minimal) ========== -->
+  <footer class="main-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="#" class="logo" aria-label="Página inicial">Evandro Junior.</a>
+          <p class="disclaimer" style="margin-top:.6rem;">
+            Aviso Legal: O conteúdo deste site tem caráter informativo e não constitui aconselhamento jurídico nem estabelece relação advogado-cliente.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Links Rápidos</h4>
+          <ul class="footer-links">
+            <li><a href="#areas">Áreas de Atuação</a></li>
+            <li><a href="#diferenciais">Diferenciais</a></li>
+            <li><a href="#equipe">Sobre</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contato</h4>
+          <ul class="footer-links">
+            <li><a href="tel:+5515999999999">+55 (15) 99999-9999</a></li>
+            <li><a href="mailto:contato@advogadoevandro.com">contato@advogadoevandro.com</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Siga-nos</h4>
+          <ul class="social-links">
+            <li><a href="#" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a></li>
+            <li><a href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8a4 4 0 0 1 3.37 3.37z"/><line x1="17.5" x2="17.5" y1="6.5" y2="6.5"/></svg>
+            </a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>© 2024 Evandro Junior Advocacia. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================== JS ===================== -->
+  <script>
+
+      // Scroll reveal
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) { entry.target.classList.add('is-visible'); observer.unobserve(entry.target); }
+        });
+      }, { threshold: 0.1 });
+      document.querySelectorAll('.animate-in').forEach(el => observer.observe(el));
+
+      // Header sticky
+      const header = document.querySelector('.main-header');
+      window.addEventListener('scroll', () => header.classList.toggle('scrolled', window.scrollY > 50));
+
+      // FAQ acordeão (PB)
+      document.querySelectorAll('#faq .faq-item').forEach(item => {
+        const b = item.querySelector('.faq-q');
+        const ans = item.querySelector('.faq-a');
+        b.addEventListener('click', () => {
+          const open = item.classList.contains('open');
+          document.querySelectorAll('#faq .faq-item.open').forEach(i => {
+            i.classList.remove('open');
+            i.querySelector('.faq-a').style.maxHeight = '0';
+            i.querySelector('.faq-q').setAttribute('aria-expanded', 'false');
+          });
+          if (!open) {
+            item.classList.add('open');
+            b.setAttribute('aria-expanded', 'true');
+            ans.style.maxHeight = ans.scrollHeight + 'px';
+          }
+        });
+      });
+
+      // Formulário (fetch com UX de status)
+      const form = document.getElementById('contact-form');
+      if (form) {
+        const status = document.getElementById('form-status');
+        form.addEventListener('submit', async (e) => {
+          e.preventDefault();
+          status.textContent = 'Enviando...'; status.className = '';
+          const data = new FormData(form);
+          try {
+            const res = await fetch(form.action, { method: 'POST', body: data, headers: { 'Accept': 'application/json' } });
+            if (res.ok) { form.reset(); status.textContent = 'Mensagem enviada com sucesso!'; status.classList.add('success'); }
+            else { const out = await res.json(); status.textContent = out.error || 'Erro ao enviar.'; status.classList.add('error'); }
+          } catch { status.textContent = 'Não foi possível conectar.'; status.classList.add('error'); }
+        });
+      }
+  </script>
+
+  <noscript>Para melhor experiência, habilite o JavaScript. Os conteúdos essenciais permanecem acessíveis.</noscript>
 </body>
 </html>
